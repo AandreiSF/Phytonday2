@@ -1,1 +1,849 @@
+Q1. L is a list defined as L= [11, 12, 13, 14].
+(i)	WAP to add 50 and 60 to L. 
+L = [11, 12, 13, 14]
+
+# Add 50 and 60 to the list L
+L.append(50)
+L.append(60)
+
+print(L)
+
+
+           WAP to remove 11 and 13from L. 
+L = [11, 12, 13, 14]
+
+# Remove elements 11 and 13 from the list L
+L.remove(11)
+L.remove(13)
+print(L)
+
+(iii) WAP to sort L in ascending order. 
+
+L = [11, 12, 13, 14]
+
+# Sort the list L in ascending order
+L.sort()
+
+print(L)
+(iv) WAP to sort L in descending order.
+L = [11, 12, 13, 14]
+
+# Sort the list L in descending order
+L.sort(reverse=True)
+
+print(L)
+
+
+ (v) WAP to search for 13 in L. 
+L = [11, 12, 13, 14]
+
+# Search for the element 13 in the list L
+if 13 in L:
+    print("13 is present in the list.")
+else:
+    print("13 is not present in the list.")
+
+(vi) WAP to count the number of elements present in L.
+
+L = [11, 12, 13, 14]
+
+# Count the number of elements in the list L
+count = len(L)
+
+print("Number of elements in the list:", count)
+
+
+ (vii) WAP to sum all the elements in L.
+
+L = [11, 12, 13, 14]
+
+# Sum all the elements in the list L
+total_sum = sum(L)
+
+print("Sum of all elements in the list:", total_sum)
+
+
+ (viii) WAP to sum all ODD numbers in L. 
+
+L = [11, 12, 13, 14]
+
+# Sum all the ODD numbers in the list L
+odd_sum = sum(num for num in L if num % 2 != 0)
+
+print("Sum of all ODD numbers in the list:", odd_sum)
+(ix) WAP to sum all EVEN numbers in L. 
+
+L = [11, 12, 13, 14]
+
+# Sum all the EVEN numbers in the list L
+even_sum = sum(num for num in L if num % 2 == 0)
+
+print("Sum of all EVEN numbers in the list:", even_sum)
+
+
+
+
+
+
+
+
+
+(x) WAP to sum all PRIME numbers in L. 
+L = [11, 12, 13, 14]
+
+# Function to check if a number is prime
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Sum all the PRIME numbers in the list L
+prime_sum = sum(num for num in L if is_prime(num))
+
+print("Sum of all PRIME numbers in the list:", prime_sum)
+
+
+(xi) WAP to clear all the elements in L. 
+
+L = [11, 12, 13, 14]
+
+# Clear all the elements in the list L
+L.clear()
+
+print(L)
+
+
+(xii) WAP to delete L. in phyton
+L = [11, 12, 13, 14]
+
+# Delete the list L
+del L
+
+# Attempting to access L after deletion will raise an error
+print(L)  # This will raise a NameError: name 'L' is not defined
+
+
+
+
+
+
+
+
+
+
+Q2. D is a dictionary defined as D= {1:5.6, 2:7.8, 3:6.6, 4:8.7, 5:7.7}. 
+
+
+(i)	WAP to add new entry in D; key=8 and value is 8.8 
+                            # Dictionary D
+D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+# (i) Add new entry in D; key=8 and value is 8.8
+D[6] = 8.8
+# Printing the dictionary after adding the new entry
+print("Updated dictionary D:", D)
+
+(ii) WAP to remove key=2.
+D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+
+# Remove the key-value pair with key=2 from the dictionary D
+del D[2]
+
+print(D)
+
+
+ (iii) WAP to check weather 6 key is present in D.
+
+D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+
+# Check if the key 6 is present in the dictionary D
+if 6 in D:
+    print("Key 6 is present in the dictionary D.")
+else:
+    print("Key 6 is NOT present in the dictionary D.")
+
+
+
+ (iv) WAP to count the number of elements present in D.
+
+D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+# Count the number of elements in the dictionary D
+num_elements = len(D)
+
+print("Number of elements in the dictionary D:", num_elements)
+
+ (v) WAP to add all the values present D. 
+
+D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+# Initialize the variable to store the sum of values
+total_sum = 0
+# Iterate through the values in the dictionary and add them to the total_sum
+for value in D.values():
+    total_sum += value
+print("Sum of all values in the dictionary D:", total_sum)
+
+
+
+(ii)	WAP to update the value of 3 to 7.1. 
+
+D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+
+# Update the value of key 3 to 7.1
+D[3] = 7.1
+
+print(D)
+
+
+
+
+(iii)	WAP to clear the dictionary.
+(iv)	D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}
+(v)	
+(vi)	# Clear the dictionary D
+(vii)	D.clear()
+(viii)	
+(ix)	print(D)
+
+
+
+
+
+
+
+
+
+
+
+Q3. S1 is a set defined as S1= [10, 20, 30, 40, 50, 60].
+ S2 is a set defined as S2= [40, 50, 60, 70, 80, 90]. 
+
+(i)	WAP to add 55 and 66 in Set S1. 
+                        S1 = {10, 20, 30, 40, 50, 60}
+                        # Add 55 and 66 to set S1
+                       S1.add(55)
+                         S1.add(66)
+                         print(S1)
+
+
+(ii)	(ii) WAP to remove 10 and 30 from Set S1. 
+                                 S1 = {10, 20, 30, 40, 50, 60}
+                                 # Remove 10 and 30 from set S1
+                                 S1.remove(10)
+                                   S1.remove(30)
+                                         print(S1)
+
+
+(iii)	(iii) WAP to check whether 40 is present in S1. 
+     
+                     S1 = {10, 20, 30, 40, 50, 60}
+                      # Check if 40 is present in set S1
+                      if 40 in S1:
+                       print("40 is present in the set S1.")
+                     else:
+                      print("40 is NOT present in the set S1.")
+
+
+
+(iv)	(iv) WAP to find the union between S1 and S2.
+
+S1 = {10, 20, 30, 40, 50, 60}
+S2 = {40, 50, 60, 70, 80, 90}
+# Find the union between S1 and S2 using the union() method
+union_set = S1.union(S2)
+# Alternatively, you can find the union using the | operator
+# union_set = S1 | S2
+print(union_set)
+
+(v)	 (v) WAP to find the intersection between S1 and S2.
+                                 S1 = {10, 20, 30, 40, 50, 60}
+                         S2 = {40, 50, 60, 70, 80, 90}
+                            # Find the intersection between S1 and S2 using the intersection() method
+                            intersection_set = S1.intersection(S2)
+                             # Alternatively, you can find the intersection using the & operator
+                              # intersection_set = S1 & S2
+                              print(intersection_set)
+
+
+
+
+
+
+
+
+
+
+
+            WAP to find the S1 - S2.
+
+
+
+
+
+
+
+
+
+S1 = {10, 20, 30, 40, 50, 60}
+S2 = {40, 50, 60, 70, 80, 90}
+# Find the set difference between S1 and S2 using the difference() method
+difference_set = S1.difference(S2)
+# Alternatively, you can find the difference using the - operator
+# difference_set = S1 - S2
+print(difference_set)
+
+
+
+
+
+
+
+
+
+
+
+
+Q4. Write the following program. 
+
+(i)	WAP to print 100 random strings whose length between 6 and 8. 
+                                  import random
+                                  import string
+
+                             def generate_random_string(min_length, max_length):
+                               length = random.randint(min_length, max_length)
+                               letters = string.ascii_letters + string.digits  # Generate strings with letters and digits
+                             return ''.join(random.choice(letters) for _ in range(length))
+
+                              def main():
+                            num_strings = 100
+                                 min_length = 6
+                                  max_length = 8
+
+    random_strings = [generate_random_string(min_length, max_length) for _ in range(num_strings)]
+
+    for idx, s in enumerate(random_strings, start=1):
+        print(f"{idx}. {s}")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+ii) WAP to print all prime numbers between 600 and 800. 
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def print_primes(start, end):
+    for num in range(start, end + 1):
+        if is_prime(num):
+            print(num)
+
+if __name__ == "__main__":
+    start_range = 600
+    end_range = 800
+
+    print("Prime numbers between 600 and 800:")
+    print_primes(start_range, end_range)
+
+
+
+
+(iii) WAP to print all numbers between 100 and 1000 that are divisible by 7 and 9.
+def print_divisible_by_7_and_9(start, end):
+    for num in range(start, end + 1):
+        if num % 7 == 0 and num % 9 == 0:
+            print(num)
+
+if __name__ == "__main__":
+    start_range = 100
+    end_range = 1000
+
+    print("Numbers between 100 and 1000 divisible by 7 and 9:")
+    print_divisible_by_7_and_9(start_range, end_range)
+    
+Q5. WAP to create two lists of 10 random numbers between 10 and 30; Find 
+
+
+
+(i)	Common numbers in the two lists 
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+def find_common_numbers(list1, list2):
+    return list(set(list1) & set(list2))
+
+if __name__ == "__main__":
+    list_length = 10
+    start_range = 10
+    end_range = 30
+
+    # Generate two random lists
+    list1 = generate_random_list(list_length, start_range, end_range)
+    list2 = generate_random_list(list_length, start_range, end_range)
+
+    print("List 1:", list1)
+    print("List 2:", list2)
+
+    # Find common numbers in the two lists
+    common_numbers = find_common_numbers(list1, list2)
+
+    if common_numbers:
+        print("Common numbers:", common_numbers)
+    else:
+        print("No common numbers found.")
+
+
+
+(ii)	(ii) Unique numbers in both the list 
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+def find_unique_numbers(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    unique_in_list1 = set1 - set2
+    unique_in_list2 = set2 - set1
+    return list(unique_in_list1.union(unique_in_list2))
+
+if __name__ == "__main__":
+    list_length = 5
+    start_range = 5
+    end_range = 30
+
+    # Generate two random lists
+    list1 = generate_random_list(list_length, start_range, end_range)
+    list2 = generate_random_list(list_length, start_range, end_range)
+
+    print("List 1:", list1)
+    print("List 2:", list2)
+
+    # Find unique numbers in both lists
+    unique_numbers = find_unique_numbers(list1, list2)
+
+    if unique_numbers:
+        print("Unique numbers in both lists:", unique_numbers)
+    else:
+        print("No unique numbers found.")
+
+
+(iii)	Minimum in both the list 
+
+
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+def find_minimum_in_list(input_list):
+    return min(input_list)
+
+if __name__ == "__main__":
+    list_length = 10
+    start_range = 10
+    end_range = 30
+
+    # Generate two random lists
+    list1 = generate_random_list(list_length, start_range, end_range)
+    list2 = generate_random_list(list_length, start_range, end_range)
+
+    print("List 1:", list1)
+    print("List 2:", list2)
+
+    # Find minimum in both lists
+    min_in_list1 = find_minimum_in_list(list1)
+    min_in_list2 = find_minimum_in_list(list2)
+
+    print("Minimum in List 1:", min_in_list1)
+    print("Minimum in List 2:", min_in_list2)
+
+
+(iv)	Maximum in both the list 
+
+                                     
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+def find_minimum_in_list(input_list):
+    return max(input_list)
+
+if __name__ == "__main__":
+    list_length = 10
+    start_range = 10
+    end_range = 30
+
+    # Generate two random lists
+    list1 = generate_random_list(list_length, start_range, end_range)
+    list2 = generate_random_list(list_length, start_range, end_range)
+
+    print("List 1:", list1)
+    print("List 2:", list2)
+
+    # Find minimum in both lists
+    min_in_list1 = find_minimum_in_list(list1)
+    min_in_list2 = find_minimum_in_list(list2)
+
+    print("Minimum in List 1:", min_in_list1)
+    print("Minimum in List 2:", min_in_list2)
+
+
+(v)	Sum of both the lists
+
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+if __name__ == "__main__":
+    list_length = 10
+    start_range = 10
+    end_range = 30
+
+    # Generate two random lists
+    list1 = generate_random_list(list_length, start_range, end_range)
+    list2 = generate_random_list(list_length, start_range, end_range)
+
+    print("List 1:", list1)
+    print("List 2:", list2)
+
+    # Find the sum of both lists
+    sum_list1 = sum(list1)
+    sum_list2 = sum(list2)
+
+    print("Sum of List 1:", sum_list1)
+    print("Sum of List 2:", sum_list2)
+
+
+
+
+
+
+
+
+
+
+Q6. WAP to create a list of 100 random numbers between 100 and 900. Count and print the:
+
+
+(i)	All odd numbers 
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+if __name__ == "__main__":
+    list_length = 100
+    start_range = 100
+    end_range = 900
+
+    # Generate a list of 100 random numbers between 100 and 900
+    random_numbers_list = generate_random_list(list_length, start_range, end_range)
+
+    print("List of 100 random numbers between 100 and 900:")
+    print(random_numbers_list)
+
+    # Find all odd numbers in the list
+    odd_numbers = [num for num in random_numbers_list if num % 2 != 0]
+
+    print("All odd numbers:")
+    print(odd_numbers)
+
+
+
+
+(ii)	All even numbers
+
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+if __name__ == "__main__":
+    list_length = 100
+    start_range = 100
+    end_range = 900
+
+    # Generate a list of 100 random numbers between 100 and 900
+    random_numbers_list = generate_random_list(list_length, start_range, end_range)
+
+    print("List of 100 random numbers between 100 and 900:")
+    print(random_numbers_list)
+
+    # Find all even numbers in the list
+    even_numbers = [num for num in random_numbers_list if num % 2 == 0]
+
+    print("All even numbers:")
+    print(even_numbers)
+
+
+
+(iii)	All prime numbers
+import random
+
+def generate_random_list(length, start, end):
+    return [random.randint(start, end) for _ in range(length)]
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+if __name__ == "__main__":
+    list_length = 100
+    start_range = 100
+    end_range = 900
+
+    # Generate a list of 100 random numbers between 100 and 900
+    random_numbers_list = generate_random_list(list_length, start_range, end_range)
+
+    print("List of 100 random numbers between 100 and 900:")
+    print(random_numbers_list)
+
+    # Find all prime numbers in the list
+    prime_numbers = [num for num in random_numbers_list if is_prime(num)]
+
+    print("All prime numbers:")
+    print(prime_numbers)
+
+
+Q7. D is a dictionary defined as D={1:"One",2:"Two",3:"Three",4:"Four", 5:"Five"}.
+ WAP to read all the keys and values from dictionary and write to the file in the given below format. 
+Key1, Value1
+
+D = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"}
+
+def write_key_value_to_file(filename, key, value):
+    with open(filename, 'w') as file:
+        file.write(f"{key}, {value}\n")
+
+if __name__ == "__main__":
+    filename = "output.txt"
+    key1 = 1
+    value1 = D[key1]
+
+    write_key_value_to_file(filename, key1, value1)
+    print("1.One")
+
+
+ Key2, Value2 
+
+D = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"}
+
+def write_key_value_to_file(filename, key, value):
+    with open(filename, 'w') as file:
+        file.write(f"{key}, {value}\n")
+
+if __name__ == "__main__":
+    filename = "output.txt"
+    key2 = 2
+    value2 = D[key2]
+
+    write_key_value_to_file(filename, key2, value2)
+    print("2:Two")
+
+
+Key3, Value3
+
+
+D = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"}
+
+def write_key_value_to_file(filename, key, value):
+    with open(filename, 'w') as file:
+        file.write(f"{key}, {value}\n")
+
+if __name__ == "__main__":
+    filename = "output.txt"
+    key3 = 3
+    value3 = D[key3]
+
+    write_key_value_to_file(filename, key3, value3)
+    print("3:Three")
+
+
+Q8
+L is a list defined as L={"One","Two","Three","Four","Five"}.
+ WAP to count the length of reach element from a list and write to the file in the given below format: 
+One, 3
+ Two, 3 
+Four, 4
+def count_letters(input_string):
+    count = 0
+    for char in input_string:
+        if char.isalpha():
+            count += 1
+    return count
+
+if __name__ == "__main__":
+    input_word = input("Enter a word or number: ")
+    letter_count = count_letters(input_word)
+    print(f"The number of letters in the input: {letter_count}")
+In this code the number above can be introduced manually an the output will show like:
+Enter a word or number: three
+The number of letters in the input: 5
+
+Q9. Write to the file 100 random strings whose length between 10 and 15.
+
+import random
+import string
+
+def generate_random_string(length):
+    letters = string.ascii_letters + string.digits + string.punctuation
+    return ''.join(random.choice(letters) for _ in range(length))
+
+def generate_random_strings(num_strings, min_length, max_length):
+    random_strings = []
+    for _ in range(num_strings):
+        random_length = random.randint(min_length, max_length)
+        random_string = generate_random_string(random_length)
+        random_strings.append(random_string)
+    return random_strings
+
+if __name__ == "__main__":
+    num_strings = 100
+    min_length = 10
+    max_length = 15
+
+    random_strings = generate_random_strings(num_strings, min_length, max_length)
+
+    print("100 Random Strings:")
+    for idx, string in enumerate(random_strings, 1):
+        print(f"{idx}. {string}")
+
+    # Optionally, you can save the strings to a file
+    with open("random_strings.txt", "w") as file:
+        for string in random_strings:
+            file.write(string + "\n")
+
+Q10. Write to the file all prime numbers between 600 and 800.
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+if __name__ == "__main__":
+    start_range = 600
+    end_range = 800
+
+    print("Prime numbers between 600 and 800:")
+    for num in range(start_range, end_range + 1):
+        if is_prime(num):
+            print(num)
+
+Q11. WAP to calculate the time taken by a program.
+import time
+
+def your_program():
+    # Replace this function with your actual program logic
+    # For example, let's simulate a delay using time.sleep(3)
+    time.sleep(3)
+    print("Program execution completed.")
+
+if __name__ == "__main__":
+    start_time = time.time()
+    
+    # Call your_program() or any other function here
+    your_program()
+    
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Time taken by the program: {elapsed_time:.2f} seconds")
+
+Q12 WAP to sort following number of elements in a list, calculate time taken and plot the graph.
+
+import time
+import numpy as np
+import pandas as pd
+
+# Initialize list sizes and an empty list for time measurements
+list_sizes = [5000, 10000, 15000, 20000, 25000]
+times = []
+
+# Loop through each list size
+for size in list_sizes:
+    # Generate a list of ascending numbers of the current size
+    lst = list(range(1, size+1))
+
+    # Shuffle the list to make it unsorted
+    np.random.shuffle(lst)
+
+    # Start the timer
+    start_time = time.time()
+
+    # Sort the list
+    sorted_list = sorted(lst)
+
+    # End the timer and calculate elapsed time
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+
+    # Store the elapsed time
+    times.append(elapsed_time)
+
+# Create a DataFrame from the list sizes and times
+df = pd.DataFrame({
+    'List Size': list_sizes,
+    'Time Taken (seconds)': times
+})
+
+# Print the DataFrame
+print(df)
+
+Q13 WAP to create a dictionary of student marks in five subjects and you have to find the student having maximum and minimum average marks.
+def calculate_average(marks):
+    return sum(marks) / len(marks)
+
+# Function to find student with maximum and minimum average marks
+def find_max_min_average_students(students):
+    max_average = 0
+    min_average = float('inf')
+    max_student = ""
+    min_student = ""
+
+    for student, marks in students.items():
+        average = calculate_average(marks)
+        if average > max_average:
+            max_average = average
+            max_student = student
+        if average < min_average:
+            min_average = average
+            min_student = student
+
+    return max_student, min_student
+
+# Create a dictionary of student marks in five subjects
+students_marks = {
+    "Alice": [90, 85, 95, 89, 92],
+    "Bob": [78, 80, 70, 85, 75],
+    "Charlie": [92, 88, 95, 90, 91],
+    "David": [85, 92, 78, 88, 82],
+    "Eve": [70, 75, 68, 80, 72]
+}
+
+# Find the student with maximum and minimum average marks
+max_average_student, min_average_student = find_max_min_average_students(students_marks)
+
+print(f"The student with the maximum average marks is {max_average_student}.")
+print(f"The student with the minimum average marks is {min_average_student}.")
+
 
