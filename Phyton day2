@@ -1,0 +1,21 @@
+Challenge Question ----------------------------------------------------------------------------------------------------------------------------- 1. Write a python program to sort the list of heterogeneous data. 
+e.g. L = ["Ram", 1, "Shyam", 2, "Aman", 3] 
+print(L) L.sort()
+ print(L) 
+# Above code gives error.
+ Correct it
+
+
+L = ["Ram", 1, "Shyam", 2, "Aman", 3]
+# Define a custom sorting key function
+def custom_sort_key(element):
+    if isinstance(element, int):
+        return (0, element)  # Integer elements are sorted first
+    else:
+        return (1, element)  # Non-integer elements are sorted later
+
+# Sort the list using the custom sorting key
+L_sorted = sorted(L, key=custom_sort_key)
+
+print("Original list:", L)
+print("Sorted list:", L_sorted)
